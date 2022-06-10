@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    font-family: 'Montserrat', sans-serif;
+    height: 100vh;
+    background-color: #f6e8df;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.container{
+    margin: 1rem;
+    padding: 1rem;
+    height: 40%;
+    width: 35%;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #ffffff;
+    box-shadow: 0px 0px 10px 10px rgba(0, 0, 0, 0.1);
+    max-width: 280px;
+    min-width: 220px;
+    max-height: 240px;
+    min-height: 224px;
+}
+
+.container *{
+    margin: .5rem;
+}
+
+.input{
+    border: none;
+    border-radius: 10px;
+    padding: 1rem;
+    outline: none;
+    background-color: #F6F7F9;
+    transition: outline 10ms ease-in-out 100ms;
+}
+
+.input:focus{
+    outline: 2px solid #feae96;
+}
+
+.button{
+    height: 30px;
+    width: 70px;
+    border-radius: 10px;
+    outline: none;
+    border: none;
+    background-color: rgba(254, 174, 150, 1); 
+    color: #F6F7F9;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 300ms, color 300ms, outline 100ms;
+}
+
+.button:hover{
+    background-color: rgba(255, 255, 255, .5);
+    color: #feae96;
+    outline: 2px solid #feae96;
+}
+
+.ipcontainer{
+    margin: 1rem;
+    padding: 1rem;
+    height: 40%;
+    width: 70%;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #ffffff;
+    box-shadow: 0px 0px 10px 10px rgba(0, 0, 0, 0.1);
+    min-width: 390px;
+    max-width: 568px;
+    min-height: 235px;
+}
+
+.ip-table{
+    border-collapse: collapse;
+    height: 100%;
+    width: 100%;
+    border-radius: 7px 7px 0 0;
+    overflow: hidden;
+}
+
+.ip-table thead tr{
+    background-color: rgba(254, 174, 150, 1);
+    border-radius: 12px;
+    color: white;
+    height: 30px;
+    font-weight: bolder;
+}
+
+.ip-table th{
+    padding: 10px;
+}
+.ip-table td{
+    margin: 14px;
+}
+
+.ip-table td{
+    display: flex;
+    justify-content: center;
+}
+
+.ip-table tbody tr{
+    border-bottom: 1px solid #dddddd
+}
+
+.ip-table tbody tr:nth-of-type(even){
+    background-color: #f3f3f3;
+}

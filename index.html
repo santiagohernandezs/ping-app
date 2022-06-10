@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <!-- https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP -->
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'">
+    <title>Hello World!</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <div class="container">
+      <h3 class="title">Introduce una IP</h3>
+      <input class="input" type="text" placeholder="Introduce una IP">
+      <input class="button" type="button" value="Add">
+    </div>
+    <div class="ipcontainer">
+      <Table class="ip-table">
+        <thead>
+          <tr>
+            <th>Select</th>
+            <th>IP</th>
+            <th>Name</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="check"><input type="checkbox" name="" id=""></td>
+            <th>8.8.8.8</th>
+            <th>Google</th>
+          </tr>
+          <tr>
+            <td class="check"><input type="checkbox" name="" id=""></td>
+            <th>8.8.4.4</th>
+            <th>Google</th>
+          </tr>
+          <tr>
+            <td class="check"><input type="checkbox" name="" id=""></td>
+            <th>1.1.1.1</th>
+            <th>CloudFare</th>
+          </tr>
+          <tr>
+            <td class="check"><input type="checkbox" name="" id=""></td>
+            <th>1.0.0.1</th>
+            <th>CloudFare</th>
+          </tr>
+        </tbody>
+      </Table>
+    </div>
+    <input class="button" type="button" value="Start">
+  </body>
+</html>
