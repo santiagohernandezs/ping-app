@@ -11,10 +11,10 @@
     <div class="container">
       <h3 class="title">Introduce una IP</h3>
       <input class="input" type="text" placeholder="Introduce una IP">
-      <input class="button" type="button" value="Add">
+      <input class="button" type="button" id="add" value="Add">
     </div>
     <div class="ipcontainer">
-      <Table class="ip-table">
+      <Table class="ip-table" id="table">
         <thead>
           <tr>
             <th>Select</th>
@@ -24,7 +24,7 @@
         </thead>
         <tbody>
           <tr>
-            <td class="check"><input type="checkbox" name="" id=""></td>
+            <td class="check"><input type="checkbox" name="Add" id="add"></td>
             <th>8.8.8.8</th>
             <th>Google</th>
           </tr>
@@ -46,6 +46,8 @@
         </tbody>
       </Table>
     </div>
-    <input class="button" type="button" value="Start">
+    <input class="button" id="start" type="button" value="Start">
+
+    <script type="module" src="./script.js"></script>
   </body>
 </html>

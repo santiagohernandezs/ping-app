@@ -1,9 +1,12 @@
-const {Notification} = require('electron')
-const NOTIFICATION_TITLE = 'Hola de nuevo'
-const NOTIFICATION_BODY = 'La aplicación está lista'
+const electron = require ("electron");
+
+var notification = new electron.remote.Notification();
 
 function showNotification () {
-  new Notification({ title: NOTIFICATION_TITLE, body: NOTIFICATION_BODY }).show()
-};
+   notification({ 
+      title: "hello",
+      body: "World" 
+   }).show()
+}
 
-exports.showNotification;
+export default showNotification;
